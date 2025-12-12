@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Carin Cell - Home</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+<script>
+fetch("/partials/navbar.html").then(r=>r.text()).then(t=>navbar.innerHTML=t);
+</script>
+
+<div class="container">
+  <h1>Selamat datang di Carin Cell</h1>
+  <p>Kami menjual handphone, aksesoris, dan laptop.</p>
+</div>
+
+<div id="footer"></div>
+<script>
+fetch("/partials/footer.html").then(r=>r.text()).then(t=>footer.innerHTML=t);
+</script>
+
+</body>
+</html>
